@@ -132,6 +132,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Find City Weather">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" systemColor="tertiarySystemBackgroundColor"/>
                                         </state>
                                         <connections>
                                             <action selector="getWeatherPressed:" destination="k58-cj-XHP" eventType="touchUpInside" id="N9D-sX-ecS"/>
@@ -177,6 +178,9 @@
         <image name="qweather" width="1500" height="2250"/>
         <image name="switch" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
