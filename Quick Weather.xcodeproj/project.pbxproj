@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		42EC4E02255A51D700E923EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC4E01255A51D700E923EB /* AppDelegate.swift */; };
 		42EC4E04255A51D700E923EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC4E03255A51D700E923EB /* SceneDelegate.swift */; };
-		42EC4E06255A51D700E923EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC4E05255A51D700E923EB /* ViewController.swift */; };
+		42EC4E06255A51D700E923EB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC4E05255A51D700E923EB /* WeatherViewController.swift */; };
 		42EC4E09255A51D700E923EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EC4E07255A51D700E923EB /* Main.storyboard */; };
 		42EC4E0B255A51D800E923EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EC4E0A255A51D800E923EB /* Assets.xcassets */; };
 		42EC4E0E255A51D800E923EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EC4E0C255A51D800E923EB /* LaunchScreen.storyboard */; };
+		42EC4E17255A53FC00E923EB /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC4E16255A53FC00E923EB /* ChangeCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42EC4DFE255A51D700E923EB /* Quick Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EC4E01255A51D700E923EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EC4E03255A51D700E923EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42EC4E05255A51D700E923EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42EC4E05255A51D700E923EB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		42EC4E08255A51D700E923EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42EC4E0A255A51D800E923EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42EC4E0D255A51D800E923EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42EC4E0F255A51D800E923EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EC4E16255A53FC00E923EB /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		42EC4E00255A51D700E923EB /* Quick Weather */ = {
 			isa = PBXGroup;
 			children = (
-				42EC4E01255A51D700E923EB /* AppDelegate.swift */,
-				42EC4E03255A51D700E923EB /* SceneDelegate.swift */,
-				42EC4E05255A51D700E923EB /* ViewController.swift */,
-				42EC4E07255A51D700E923EB /* Main.storyboard */,
+				42EC4E1B255A64A300E923EB /* View */,
+				42EC4E1C255A64AD00E923EB /* Model */,
+				42EC4E1D255A64C400E923EB /* Controller */,
 				42EC4E0A255A51D800E923EB /* Assets.xcassets */,
 				42EC4E0C255A51D800E923EB /* LaunchScreen.storyboard */,
 				42EC4E0F255A51D800E923EB /* Info.plist */,
 			);
 			path = "Quick Weather";
+			sourceTree = "<group>";
+		};
+		42EC4E1B255A64A300E923EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42EC4E07255A51D700E923EB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42EC4E1C255A64AD00E923EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42EC4E1D255A64C400E923EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42EC4E01255A51D700E923EB /* AppDelegate.swift */,
+				42EC4E03255A51D700E923EB /* SceneDelegate.swift */,
+				42EC4E05255A51D700E923EB /* WeatherViewController.swift */,
+				42EC4E16255A53FC00E923EB /* ChangeCityViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EC4E06255A51D700E923EB /* ViewController.swift in Sources */,
+				42EC4E06255A51D700E923EB /* WeatherViewController.swift in Sources */,
 				42EC4E02255A51D700E923EB /* AppDelegate.swift in Sources */,
 				42EC4E04255A51D700E923EB /* SceneDelegate.swift in Sources */,
+				42EC4E17255A53FC00E923EB /* ChangeCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q2LTKUN66;
 				INFOPLIST_FILE = "Quick Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q2LTKUN66;
 				INFOPLIST_FILE = "Quick Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
