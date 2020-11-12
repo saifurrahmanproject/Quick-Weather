@@ -8,9 +8,17 @@
 
 import UIKit
 
+
+
+
+protocol ChangeCityDelegate {
+    
+    func userEnterNewCityName(city: String)
+}
+
 class ChangeCityViewController: UIViewController {
     
-
+    var delegate : ChangeCityDelegate?
     
     @IBOutlet weak var changeCityTextField: UITextField!
    
@@ -18,7 +26,14 @@ class ChangeCityViewController: UIViewController {
         
         
         
+        // when user enter the city name.
+        let cityName = changeCityTextField.text!
         
+        
+        delegate?.userEnterNewCityName(city: cityName)
+        
+        // when user dismiss the cityWeather viewController to main viewController 
+        self.dismiss(animated: true, completion: nil)
         
     }
     

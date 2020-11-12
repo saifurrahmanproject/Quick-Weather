@@ -27,7 +27,7 @@
                                 </constraints>
                                 <state key="normal" image="switch"/>
                                 <connections>
-                                    <segue destination="k58-cj-XHP" kind="presentation" identifier="getCityWeather" id="U6c-vu-0Vi"/>
+                                    <segue destination="k58-cj-XHP" kind="presentation" identifier="findCityWeather" id="U6c-vu-0Vi"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKj-he-FBc">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1w-sI-UN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113.0434782608697" y="93.75"/>
+            <point key="canvasLocation" x="870" y="-50"/>
         </scene>
     </scenes>
     <resources>
